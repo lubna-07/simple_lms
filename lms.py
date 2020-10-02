@@ -5,12 +5,12 @@ class library:
         self.lenddict={}
 
     def dis(self):
-        print(f"We hav the following books in : {self.libname}")
+        print("We have the following books in : {self.libname}")
         for book in self.booklist:
             print(book)
     def add(self,book):
         self.booklist.append(book)
-        print("Book hav been added")
+        print("Book have been added")
     def lend(self,user,book):
         if book not in self.lenddict.keys():
             self.lenddict.update({book:user})
